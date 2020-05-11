@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "mocha",
-    "start": "concurrently \" node server.js \" \"cd frontend && npm install && npm start\"",
-    "postinstall": "npm run build"
+    "start": "concurrently \" node server.js \" \"cd frontend && npm install && npm start\""
   },
   "engines": {
     "node": "13.1.0",
