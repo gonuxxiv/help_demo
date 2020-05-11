@@ -10,7 +10,8 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest
+    name: Build and Deploy
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@master
@@ -18,7 +19,7 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '12.13.0'
+        node-version: '13.1.0'
 
     - name: npm install, build, and test
       run: |
